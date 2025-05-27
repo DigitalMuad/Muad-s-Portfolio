@@ -3,11 +3,8 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import {
   SiReact,
-  SiNextdotjs,
-  SiTypescript,
   SiTailwindcss,
   SiJavascript,
-  SiGo,
   SiMysql,
   SiPostgresql,
   SiGit,
@@ -20,7 +17,6 @@ import {
   SiSqlite,
 } from "react-icons/si";
 import { FiCode, FiDatabase, FiTool } from "react-icons/fi";
-import { TbBrain } from "react-icons/tb";
 
 const skills = {
   "Frontend Development": [
