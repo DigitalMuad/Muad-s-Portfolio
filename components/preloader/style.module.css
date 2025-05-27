@@ -1,0 +1,88 @@
+.introduction {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 99;
+  background: #000;
+  overflow: hidden;
+}
+
+.gradientBlobs {
+  position: absolute;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+.blob1 {
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 24rem;
+  height: 24rem;
+  background: linear-gradient(135deg, #059669, #134e4a);
+  border-radius: 9999px;
+  filter: blur(48px);
+  opacity: 0.4;
+  mix-blend-mode: screen;
+}
+.blob2 {
+  position: absolute;
+  top: 10rem;
+  right: 2.5rem;
+  width: 24rem;
+  height: 24rem;
+  background: linear-gradient(225deg, #6d28d9, #581c87);
+  border-radius: 9999px;
+  filter: blur(48px);
+  opacity: 0.4;
+  mix-blend-mode: screen;
+}
+.blob3 {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 33vw;
+  width: 24rem;
+  height: 24rem;
+  background: linear-gradient(315deg, #155e75, #083344);
+  border-radius: 9999px;
+  filter: blur(48px);
+  opacity: 0.3;
+  mix-blend-mode: screen;
+}
+
+.introduction svg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: calc(100% + 300px);
+}
+
+.introduction svg path {
+  fill: #000;
+}
+
+.introduction p {
+  display: flex;
+  color: rgb(255, 255, 255);
+  font-size: 42px;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.introduction p span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-right: 10px;
+} 
