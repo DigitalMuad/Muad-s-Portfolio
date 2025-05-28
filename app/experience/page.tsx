@@ -1,6 +1,6 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
-import { FiMapPin, FiAward, FiBriefcase, FiBook } from "react-icons/fi";
+import { FiMapPin, FiAward, FiBook } from "react-icons/fi";
 
 export default function ExperiencePage() {
   const data = [
