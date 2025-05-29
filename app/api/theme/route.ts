@@ -64,6 +64,7 @@ function isAllowedOrigin(origin: string | null) {
     "https://muadmahdi.com",
     "https://www.muadmahdi.com",
     "http://localhost:3000",
+    "https://personal-portfolio-virid-eight.vercel.app"
   ];
   return origin && allowedOrigins.includes(origin);
 }

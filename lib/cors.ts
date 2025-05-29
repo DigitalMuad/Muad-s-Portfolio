@@ -5,7 +5,8 @@ const allowedOrigins = [
   "https://muadmahdi.com",
   "https://www.muadmahdi.com",
   "http://localhost:3000",
-  "http://127.0.0.1:3000"
+  "http://127.0.0.1:3000",
+  "https://personal-portfolio-virid-eight.vercel.app"
 ];
 
 // Development environment check

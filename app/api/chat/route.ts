@@ -20,6 +20,7 @@ function isAllowedOrigin(origin: string | null) {
     "https://www.muadmahdi.com",
     // Include localhost for development
     "http://localhost:3000",
+    "https://personal-portfolio-virid-eight.vercel.app"
   ];
   return origin && allowedOrigins.includes(origin);
 }
