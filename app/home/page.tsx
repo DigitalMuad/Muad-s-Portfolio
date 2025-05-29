@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Head from "next/head";
+import { Typewriter } from 'react-simple-typewriter';
 
 const glitchAnimation = {
   textShadow: [
@@ -472,7 +473,15 @@ export default function HomePage() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              Software Developer | Tech Enthusiast
+              <Typewriter
+                words={['Software Developer | Tech Enthusiast']}
+                loop={1}
+                cursor
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
             </motion.p>
 
             <motion.p

@@ -50,6 +50,7 @@
     "react-icons": "^5.4.0",
     "react-markdown": "^10.0.0",
     "react-pdf": "^9.2.1",
+    "react-simple-typewriter": "^5.0.1",
     "smtp-server": "^3.13.6",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7"
