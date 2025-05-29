@@ -14,13 +14,21 @@ export default function PreloaderWrapper({
 
   useEffect(() => {
     setIsMounted(true);
-    const timer = setTimeout(() => {
+    // Only show preloader if not already shown in this session
+    if (typeof window !== "undefined" && sessionStorage.getItem("preloaderShown")) {
       setIsLoading(false);
-    }, 3000);
-
-    return () => {
-      clearTimeout(timer);
-    };
+    } else {
+      setIsLoading(true);
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+        if (typeof window !== "undefined") {
+          sessionStorage.setItem("preloaderShown", "true");
+        }
+      }, 3000);
+      return () => {
+        clearTimeout(timer);
+      };
+    }
   }, []);
 
   if (!isMounted) {
